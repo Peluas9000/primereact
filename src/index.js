@@ -6,13 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import Saludo from './components/saludo';
 import Metodos from './components/Metodos';
 import DobleNumero from './components/DobleNumero';
+import SaludoPadre from './components/SaludoPadre';
+import SaludoHijo from './components/SaludoHijo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Saludo nombre="Juan" edad="25"/>
+    {/* <Saludo nombre="Juan" edad="25"/>
     <Metodos/>
     <DobleNumero/>
+    <SumarNumeros numero1="5" numero2="10"/> */}
+    <SaludoPadre/>
+    <SaludoHijo/>
   </React.StrictMode>
 );
 

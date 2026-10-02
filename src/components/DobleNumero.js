@@ -1,3 +1,5 @@
+import React from "react";
+
 function DobleNumero() {
     const ejecutarDoble = (numero) => {
       let doble=numero*2;
@@ -23,9 +25,9 @@ function DobleNumero() {
     return (
     <div>
       <h1>Metodos doble numero </h1>
-      <button style={estilo} onClick={ ()=> cambiarMensaje()}>Modificar mensaje</button>
-      <button onClick={() => ejecutarDoble(5)}>Doble de 5</button>
-      <button style={estilo2} onClick={() => ejecutarDoble(10)}>Doble de 10</button>
+      <button className="button" onClick={ ()=> cambiarMensaje()}>Modificar mensaje</button>
+      <button className="button" onClick={() => ejecutarDoble(5)}>Doble de 5</button>
+      <button className="button" onClick={() => ejecutarDoble(10)}>Doble de 10</button>
     </div>
   );
 }
