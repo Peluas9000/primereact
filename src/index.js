@@ -4,10 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Saludo from './components/saludo';
+import Metodos from './components/Metodos';
+import DobleNumero from './components/DobleNumero';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Saludo/>
+    <Saludo nombre="Juan" edad="25"/>
+    <Metodos/>
+    <DobleNumero/>
   </React.StrictMode>
 );
 
