@@ -10,12 +10,22 @@ function DobleNumero() {
     mensaje="Hoy es viernes";
     console.log("Despues del cambio"+ mensaje);
   }
+
+  var estilo={
+    color:"blue",
+    backgroundColor:"yellow",
+  }
+  var estilo2={
+    color:"red",
+    backgroundColor:"black",
+  }
+
     return (
     <div>
       <h1>Metodos doble numero </h1>
-      <button onClick={ ()=> cambiarMensaje()}>Modificar mensaje</button>
+      <button style={estilo} onClick={ ()=> cambiarMensaje()}>Modificar mensaje</button>
       <button onClick={() => ejecutarDoble(5)}>Doble de 5</button>
-      <button onClick={() => ejecutarDoble(10)}>Doble de 10</button>
+      <button style={estilo2} onClick={() => ejecutarDoble(10)}>Doble de 10</button>
     </div>
   );
 }
